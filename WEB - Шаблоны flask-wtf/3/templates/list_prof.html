@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center mt-4">Список профессий</h2>
+{% if list_type == 'ol' %}
+<ol>
+    {% for profession in professions %}
+    <li>{{ profession }}</li>
+    {% endfor %}
+</ol>
+{% elif list_type == 'ul' %}
+<ul>
+    {% for profession in professions %}
+    <li>{{ profession }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="text-center text-danger">Неверный параметр. Используйте 'ol' для нумерованного списка или 'ul' для
+    маркированного.</p>
+{% endif %}
+{% endblock %}
