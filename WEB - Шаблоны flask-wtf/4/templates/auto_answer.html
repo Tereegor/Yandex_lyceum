@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center mt-4">Анкета</h2>
+<div class="mt-4">
+    <h4 class="custom-h4">Фамилия: {{ surname }}</h4>
+    <h4 class="custom-h4">Имя: {{ name }}</h4>
+    <h4 class="custom-h4">Образование: {{ education }}</h4>
+    <h4 class="custom-h4">Профессия: {{ profession }}</h4>
+    <h4 class="custom-h4">Пол: {{ sex }}</h4>
+    <h4 class="custom-h4">Мотивация: {{ motivation }}</h4>
+    <h4 class="custom-h4">Готовы остаться на Марсе: {{ ready }}</h4>
+</div>
+{% endblock %}
